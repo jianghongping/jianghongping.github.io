@@ -1,640 +1,686 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Hongping's Website</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
-	<meta name="description" content="Picard Html vCard">
-    <meta name="keywords" content="business, personal, portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="css/bootstrap.css"/> <!-- bootstrap grid -->
-    <link rel="stylesheet"  href="css/style.css"/> <!-- template css -->
-    <link rel="stylesheet" href="css/reset.css"/> <!-- reset css -->
-    <link rel="stylesheet" href="css/magnific-popup.css"/> <!-- magnific popup css -->
-    <link href="perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" /> <!-- right menu scrollbar css -->
+<!-- Metas -->
+<meta charset="utf-8">
+<title>Hongping Jiang's Website</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- Css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/owl-carousel/owl.carousel.css" rel="stylesheet"  media="all">
+<link href="css/owl-carousel/owl.theme.css" rel="stylesheet"  media="all">
+<link href="css/magnific-popup.css" type="text/css" rel="stylesheet" media="all" />
+<link href="css/font.css" rel="stylesheet" type="text/css"  media="all">
+<link href="css/fontello.css" rel="stylesheet" type="text/css"  media="all">
+<link href="css/base.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="css/main.css"  rel="stylesheet" type="text/css" media="all"/>
 
-    <!-- Color Alternatives -->
-    <link href="css/colors/switcher.css" rel="stylesheet" type="text/css">
-    <link href="css/colors/color-1.css" rel="stylesheet" type="text/css">
-    <link href="css/colors/color-2.css" rel="alternate stylesheet" type="text/css" title="color-2">
-    <link href="css/colors/color-3.css" rel="alternate stylesheet" type="text/css" title="color-3">
-    <link href="css/colors/color-4.css" rel="alternate stylesheet" type="text/css" title="color-4">
-    <link href="css/colors/color-5.css" rel="alternate stylesheet" type="text/css" title="color-5">
-    <link href="css/colors/color-6.css" rel="alternate stylesheet" type="text/css" title="color-6">
-    <link href="css/colors/color-7.css" rel="alternate stylesheet" type="text/css" title="color-7">
-    <link href="css/colors/color-8.css" rel="alternate stylesheet" type="text/css" title="color-8">
+<!--Alternate styles-->
 
+<link href="css/styles/switcher.css"  rel="stylesheet" type="text/css"/>
+<link href="css/styles/clr-1.css" rel="stylesheet" type="text/css" title="clr-1" media="all"/>
+<link href="css/styles/clr-20.css" rel="alternate stylesheet" type="text/css" title="clr-20" media="all" />
 
-    <!-- Google Web fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
-
-    <!-- Font icons -->
-    <link rel="stylesheet" href="icon-fonts/font-awesome-4.4.0/css/font-awesome.min.css"/> <!-- Fontawesome icons css -->
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+<!--[if gte IE 9]>
+        	<link rel="stylesheet" type="text/css" href="css/ie9.css" />
+		<![endif]-->
 </head>
-
 <body>
-		<div class="container demo-1">
-			<div class="content">
-				<div id="large-header" class="large-header">
-					<canvas id="demo-canvas"></canvas>
-					<h1 class="main-title">Hongping <span class="thin"></span></h1>
-				</div>
-				
-			</div>
-		</div><!-- /container -->
-		<script src="js/TweenLite.min.js"></script>
-		<script src="js/EasePack.min.js"></script>
-		<script src="js/rAF.js"></script>
-		<script src="js/demo-1.js"></script>
 
-	 <!-- Preloading -->
-    <div id="preloader">
-        <div class="spinner">
-            <div class="rect1"></div>
-            <div class="rect2"></div>
-            <div class="rect3"></div>
-            <div class="rect4"></div>
-            <div class="rect5"></div>
-        </div>
-    </div>
+<!-- Preloader -->
+<div id="loader">
+  <!-- Preloader inner -->
+  <div id="loaderInner">
+    <div class="spinner"></div>
+  </div>
+  <!-- End preloader inner -->
+</div>
+<!-- End preloader-->
 
-    <div class="color-switcher" style="display:none;">
-    	<div class="open"><i class="fa fa-cog fa-spin"></i></div>
-        <h4>SELECT A COLOR</h4>
-        <ul>
-        	<li><a class="color-1" onclick="setActiveStyleSheet('color-1'); return false;" href="#"><i class="fa fa-circle"></i></a> </li>
-            <li><a class="color-2" onclick="setActiveStyleSheet('color-2'); return false;" href="#"><i class="fa fa-circle"></i></a> </li>
-            <li><a class="color-3" onclick="setActiveStyleSheet('color-3'); return false;" href="#"><i class="fa fa-circle"></i></a> </li>
-            <li><a class="color-4" onclick="setActiveStyleSheet('color-4'); return false;" href="#"><i class="fa fa-circle"></i></a> </li>
-            <li><a class="color-5" onclick="setActiveStyleSheet('color-5'); return false;" href="#"><i class="fa fa-circle"></i></a> </li>
-            <li><a class="color-6" onclick="setActiveStyleSheet('color-6'); return false;" href="#"><i class="fa fa-circle"></i></a> </li>
-            <li><a class="color-7" onclick="setActiveStyleSheet('color-7'); return false;" href="#"><i class="fa fa-circle"></i></a> </li>
-            <li><a class="color-8" onclick="setActiveStyleSheet('color-8'); return false;" href="#"><i class="fa fa-circle"></i></a> </li>
-        </ul>
-        <button class="switcher-reset" onclick="setActiveStyleSheet('color-1'); return false;">RESET </button>
+<!--Wrapper-->
+<div id="wrapper" class="margLTop  margLBottom">
 
-    </div>
+  <!--Container-->
+  <div class="container">
+    <div class="row ">
 
-    <div class="parallax"> </div>
-    <div id="wrapper">
-        <div class="container">
-            <div class="row">
+      <!--Left content-->
 
-                <!-- Profile Informations-->
-                <div class="profile col-md-3 wow fadeInDown">
-                    <div class="profile-image">
-                        <img style="display:none;" src="images/Profile-img.png">
-                    </div>
-                    <div class="profile-info">
-                    	<div class="name-job">
-                            <h1>Hongping Jiang</h1>
-                            <span class="job"> Assit Researcher </span>
-                        </div><!-- .name-job -->
-                        <div class="social-icons">
-                            <a class="facebook" href="https://www.facebook.com/hoping.chiang"><i class="fa fa-facebook"></i> </a>
-                            <a class="twitter" href="https://twitter.com/ChiangHoping"><i class="fa fa-twitter"></i> </a>
-                            <a class="behance" href="#"><i class="fa fa-behance"></i> </a>
-                            <a  class="dribbble" href="#"><i class="fa fa-dribbble"></i> </a>
-                        </div>
-                    </div>
-                </div> <!--.profile .col-md-3-->
+      <div class="col-md-3 nopr left-content">
 
-                <!--Right Section-->
-                <div id="tab-container" class="col-md-9">
-                    	<!--Top Menu -->
-                        <div class="responsive-menu hidden-md hidden-lg">MENU</div>
-                        <i class="fa fa-bars right-menu" style="display:none;"></i>
-                        <ul class="top-menu">
-                            <li> <a class="selected page-scroll" href="#about"><i class="fa fa-user"></i> <span> ABOUT </span></a></li>
-                            <li> <a class="page-scroll" href="#resume"><i class="fa fa-file-text-o"></i>  <span> RESUME </span></a></li>
-                            <li> <a class="page-scroll" href="#portfolio"><i class="fa fa-picture-o"></i>  <span> PORTFOLIO</span></a></li>
-                            <li> <a class="page-scroll" href="#blog"><i class="fa fa-comments"></i> <span> BLOG</span></a></li>
-                            <li> <a class="page-scroll" href="#contact"><i class="fa fa-map-marker"></i> <span> CONTACT </span></a></li>
-                        </ul>
-                   	<!--Right Content -->
-                    <!--About Section-->
-                    <div id="about" class="content col-md-12 fadeInUp">
-                    	<div class="row">
-                    		<div class="page-title">
-                           		<h2>About Me </h2>
-                            </div>
-                            <!-- Info -->
-                            <div class="col-md-12 pinfo">
-                                <div class="col-md-12 about-info">
-                                    <ul class="info-list">
-                                    	<li>Full Name : <span>Hongping Jiang</span> </li>
-                                        <li>Birthday : <span>Octo, 1986</span> </li>
-                                        <li>Job : <span>Assit Researcher</span> </li>
-                                        <li>Website : <span>www.jianghp.com.cn</span> </li>
-                                        <li>Email : <span>chianghoping@gmail.com</span> </li>
-                                        <li>Phone : <span>8615210982898</span> </li>
-                                    </ul>
-                                </div> <!-- .col-md-4 .about-info -->
-                             </div><!-- .col-md-12 .spotted -->
+        <!--Header-->
+        <header id="header">
 
-                            <div class="col-md-12 spotted ptext">
-                            <div class="col-md-12 about-text">
-                                <h2 class="section-title">I’m Particle Accelerator Designer</h2>
-                                <p>I am a physicist, an atheist, a gamer, a husband and a father. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me.
+          <!--Main header-->
+          <div class="main-header">
 
-<br/><br/>When I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing, Oh, would I could describe these conceptions, could impress upon paper all that is living so full and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite God! </p>
-                            </div><!--.col-md-12 .about-text end-->
-                            </div><!-- .col-md-12 .spotted -->
-                            <!-- Skills -->
-                            <div class="col-md-12 gray-bg ptext">
-                                <div class="col-md-6 my-skills">
-                                    <ul class="skill-list">
-                                        <li>
-                                            <h3>Beam Dynamics</h3>
-                                            <div class="progress">
-                                                <div class="percentage" style="width:95%;"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <h3>RF Structure Design</h3>
-                                            <div class="progress">
-                                                <div class="percentage" style="width:95%;"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <h3>Machine Learning Applied in Accelerator</h3>
-                                            <div class="progress">
-                                                <div class="percentage" style="width:84%;"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <h3>TraceWin/IMPaCT</h3>
-                                            <div class="progress">
-                                                <div class="percentage" style="width:95%;"></div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div> <!--.col-md-6 .my-skills end-->
-                                 <div class="col-md-6 my-skills">
-                                    <ul class="skill-list">
-                                        <li>
-                                            <h3>PARMELA/WinAGILE</h3>
-                                            <div class="progress">
-                                                <div class="percentage" style="width:85%;"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <h3>RFQGen/LORASR</h3>
-                                            <div class="progress">
-                                                <div class="percentage" style="width:80%;"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <h3>CST/HFSS</h3>
-                                            <div class="progress">
-                                                <div class="percentage" style="width:90%;"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <h3>Python/Matlab</h3>
-                                            <div class="progress">
-                                                <div class="percentage" style="width:95%;"></div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div> <!--.col-md-6 .my-skills end-->
-                            </div>
-                            <!-- Services -->
-                            <div class="col-md-12 pwedo">
-                            <div class="col-md-12 col-sm-12 col-xs-12 services">
-                                <div class="service col-md-4 col-sm-6">
-                                    <i class="fa fa-apple"></i>
-                                    <span>
-                                        <b>Applications</b>
-                                        <p>Proton Therapy etc.</p>
-                                    </span>
-                                </div> <!-- .service .col-md-4 .col-sm-6 end -->
-                                <div class="service col-md-4 col-sm-6">
-                                    <i class="fa fa-desktop"></i>
-                                    <span>
-                                        <b>RF Stucture Design</b>
-                                        <p>Cavity and coupler</p>
-                                    </span>
-                                </div> <!-- .service .col-md-4 .col-sm-6 end -->
-                                <div class="service col-md-4 col-sm-6">
-                                    <i class="fa fa-picture-o"></i>
-                                    <span>
-                                        <b>Beam Dynamics</b>
-                                        <p>Space-Charge Effect</p>
-                                    </span>
-                                </div> <!-- .service .col-md-4 .col-sm-6 end -->
-                                <div class="service col-md-4 col-sm-6">
-                                    <i class="fa fa-code"></i>
-                                    <span>
-                                        <b>Calculation Impedance</b>
-                                        <p>Synchrotron ring</p>
-                                    </span>
-                                </div> <!-- .service .col-md-4 .col-sm-6 end -->
-                                <div class="service col-md-4 col-sm-6">
-                                    <i class="fa fa-search"></i>
-                                    <span>
-                                        <b>Beamline Optimization</b>
-                                        <p>For different purposes</p>
-                                    </span>
-                                </div> <!-- .service .col-md-4 .col-sm-6 end -->
-                                <div class="service col-md-4 col-sm-6">
-                                    <i class="fa fa-support"></i>
-                                    <span>
-                                        <b>Machine Learning</b>
-                                        <p>applied in accelerator</p>
-                                    </span>
-                                </div> <!-- .service .col-md-4 .col-sm-6 end -->
-                            </div> <!-- .col-md-12 .services -->
-                            </div> <!-- .col-md-12 .spotted-->
-                                <!--footer-->
-                                <footer class="footer"> <p>  Copyright © 2020 All right reserved </p></footer>
+            <!--Profile image-->
+            <figure class="img-profile"> <img style="display:none;" src="img/profile.jpg" alt=""/>
+              <figcaption class="name-profile"> <span>JHP<sup>&reg;</sup></span> </figcaption>
+            </figure>
+            <!--End profile image-->
 
+            <!--Main navigation-->
+            <nav id="main-nav" class="main-nav clearfix tabbed">
+              <ul>
+                <li ><a href="#about"><i class="icon-user"></i>About</a></li>
+                <li><a  href="#portfolio"><i class="icon-camera"></i>Portfolio</a></li>
+                <li><a  href="#blog"><i class="icon-chat"></i>Blog</a></li>
+                <li><a  href="#contact"><i class="icon-phone"></i>Contact</a></li>
+              </ul>
+            </nav>
+            <!--End main navigation-->
 
-                        </div><!--.row end-->
-                    </div> <!-- #about .content .col-md-12 end -->
+          </div>
+          <!--End main header-->
 
-                    <!--Resume Section -->
-                    <div id="resume" class="content col-md-12">
-                    	<div class="row">
-                    		<div class="page-title">
-                           		<h2>My Resume </h2>
-                            </div>
-                            <div class="col-md-12 page">
-                            	<!--Resume Education Timeline-->
-                            	<div class="resume-education col-md-12">
-                                	<div class="rounded-icon">
-                                		<i class="fa fa-graduation-cap"></i>
-                                	</div>
-                                    <div class="resume-out">
-                                    	<div class="resume-info">
-                                        	<h2 class="info-title">Doctoral Degree-University of Chinese Academy of Sciences</h2>
-                                            <span class="info-date">2009 - 2014 </span>
-                                            <p>Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam tincidunt augue in leo feugiat, quis interdum nisi sollicitudin. Suspendisse vulputate diam sit amet rutrum dictum. Donec tempus a lectus quis luctus. Vivamus sed maximus justo, sed aliquet purus. Etiam ut velit gravida, mollis turpis nec, tristique erat.</p>
-                                        </div> <!-- .resume-info -->
-                                        <div class="resume-info">
-                                        	<h2 class="info-title">Jiont Accelerator School 2013</h2>
-                                            <span class="info-date">Octo 2013 - November 2013 </span>
-                                            <p>Duis ipsum ligula, feugiat nec auctor vitae, porta sit amet urna. Praesent ex lorem, porta nec aliquet eu, ullamcorper eget nibh. Vivamus aliquet orci a elementum tincidunt. Etiam sed mi vel nibh varius viverra sed ac <est class=""></est></p>
-                                        </div> <!-- .resume-info -->
-                                        <div class="resume-info">
-                                        	<h2 class="info-title">Bachelor Degree-Jilin University</h2>
-                                            <span class="info-date">2005 - 2009 </span>
-                                            <p>Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam tincidunt augue in leo feugiat, quis interdum nisi sollicitudin. Suspendisse vulputate diam sit amet rutrum dictum. Donec tempus a lectus quis luctus. Vivamus sed maximus justo, sed aliquet purus. Etiam ut velit gravida, mollis turpis nec, tristique erat.</p>
-                                        </div> <!-- .resume-info -->
-                                    </div> <!-- .resume-out end -->
-                                </div> <!-- .resume-education .col-md-12 end -->
+          <div class="bottom-header bgWhite ofsTSmall ofsBSmall tCenter">
+            <ul class="social">
+              <li><a href="https://www.facebook.com/hoping.chiang"><i class="icon-facebook"></i></a></li>
+              <li><a href="https://twitter.com/ChiangHoping"><i class="icon-twitter"></i></a></li>
+              <!--<li><a href="#"><i class="icon-linkedin"></i></a></li>
+              -->
+            </ul>
+            <p>&copy; 2020 JHP.</p>
+          </div>
+        </header>
+        <!--End  header-->
 
-                                <!--Resume Work Timeline-->
-                            	<div class="resume-education col-md-12">
-                                	<div class="rounded-icon">
-                                		<i class="fa fa-suitcase"></i>
-                                	</div>
-                                    <div class="resume-out">
-                                    	<div class="resume-info">
-                                        	<h2 class="info-title">Assit Researcher - Harbin Institute of Technology</h2>
-                                            <span class="info-date">2017 - Present </span>
-                                            <p>In charge of 300MeV proton and heavy ion accelerator LINAC. Researcher of Harbin Institute of Technology. Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam tincidunt augue in leo feugiat, quis interdum nisi sollicitudin. Suspendisse vulputate diam sit amet rutrum dictum. Donec tempus a lectus quis luctus. Vivamus sed maximus justo, sed aliquet purus. Etiam ut velit gravida, mollis turpis nec, tristique erat.</p>
-                                        </div> <!-- .resume-info -->
-                                        <div class="resume-info">
-                                        	<h2 class="info-title">Postdoctor - Tsinghua University</h2>
-                                            <span class="info-date">2014 - 2016 </span>
-                                            <p>Postdoctor of Tsinghua University. Design of RF coupler and buncher. Calculation of Impedence of ring. CPHS Beamline optimizing. DTL error analysis. Duis ipsum ligula, feugiat nec auctor vitae, porta sit amet urna. Praesent ex lorem, porta nec aliquet eu, ullamcorper eget nibh. Vivamus aliquet orci a elementum tincidunt. Etiam sed mi vel nibh varius viverra sed ac <est class=""></est></p>
-                                        </div> <!-- .resume-info -->
-                                        <div class="resume-info">
-                                        	<h2 class="info-title">Ph.D Student - IHEP</h2>
-                                            <span class="info-date">2009 - 2014 </span>
-                                            <p>Beam dynamics analiysis at Beam Halo Expriments at IHEP. Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam tincidunt augue in leo feugiat, quis interdum nisi sollicitudin. Suspendisse vulputate diam sit amet rutrum dictum. Donec tempus a lectus quis luctus. Vivamus sed maximus justo, sed aliquet purus. Etiam ut velit gravida, mollis turpis nec, tristique erat.</p>
-                                        </div> <!-- .resume-info -->
-                                    </div> <!-- .resume-out end -->
-                                </div> <!-- .resume-education .col-md-12 end -->
+      </div>
+      <!--End left content-->
 
-                                <!--footer-->
-                                <footer class="footer"> <p>  Copyright © 2020 All right reserved </p></footer>
+      <!--Right content-->
+      <div class="col-md-9 right-content">
 
-                            </div><!-- .col-md-12 .page -->
-                        </div><!--.row end-->
-                    </div> <!-- #resume .content .col-md-12 end -->
+        <!--About Tab-->
+        <section id="about" class="bgWhite ofsInBottom">
 
-                    <!--Portfolio Section -->
-                    <div id="portfolio" class="content col-md-12">
-                    	<div class="row">
-                    		<div class="page-title">
-                            	<h2>My Portfolio </h2>
-                                <!-- Portfolio Filter -->
-                                <div class="portfolio_filter pull-right">
-                                	<ul>
-                                    	<li class="select-cat" data-filter="*">All</li>
-                                        <li data-filter=".web-design">Accelerator Design</li>
-                                        <li data-filter=".aplication">RFQ Stucture design</li>
-                                        <li data-filter=".development">Projects</li>
-                                    </ul>
-                                </div> <!-- .portfolio-filter .pull-right end -->
-                            </div>
-                            <div class="col-md-12 col-sm-12 col-xs-12 page">
-                            	<!-- Portfolio Items -->
-                                <div class="portfolio_items">
+          <!--About -->
+          <div class="about">
 
-                                    <div class="single_item web-design col-md-6 col-sm-12 col-xs-12">
-                                        <div class="work-inner">
-                                            <div class="work-overlay">
-                                                <h3> Picard Resume Template </h3>
-                                                <p>Donec pulvinar feugiat dui vel egestas. Nulla sit amet risus risus. Nulla libero vitae... </p>
-                                                <a href="work-single.html" class="link"><i class="fa fa-link"></i></a>
-                                                <a href="images/work-1.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
-                                            </div>
-                                            <img src="images/t-work-1.jpg" alt="" />
-                                        </div>
-                                    </div>
+            <!--Main title-->
 
-                                    <div class="single_item web-design col-md-6 col-sm-12 col-xs-12">
-                                        <div class="work-inner">
-                                            <div class="work-overlay">
-                                                <h3> Picard Resume Template </h3>
-                                                <p>Donec pulvinar feugiat dui vel egestas. Nulla sit amet risus risus. Nulla libero vitae... </p>
-                                                <a href="work-single.html" class="link"><i class="fa fa-link"></i></a>
-                                                <a href="images/work-2.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
-                                            </div>
-                                            <img src="images/t-work-2.jpg" alt="" />
-                                        </div>
-                                    </div>
-
-                                    <div class="single_item aplication col-md-6 col-sm-12 col-xs-12">
-                                        <div class="work-inner">
-                                            <div class="work-overlay">
-                                                <h3> Picard Resume Template </h3>
-                                                <p>Donec pulvinar feugiat dui vel egestas. Nulla sit amet risus risus. Nulla libero vitae... </p>
-                                                <a href="work-single.html" class="link"><i class="fa fa-link"></i></a>
-                                                <a href="images/work-3.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
-                                            </div>
-                                            <img src="images/t-work-3.jpg" alt="" />
-                                        </div>
-                                    </div>
-
-                                    <div class="single_item web-design col-md-6 col-sm-12 col-xs-12">
-                                        <div class="work-inner">
-                                            <div class="work-overlay">
-                                                <h3> Picard Resume Template </h3>
-                                                <p>Donec pulvinar feugiat dui vel egestas. Nulla sit amet risus risus. Nulla libero vitae... </p>
-                                                <a href="work-single.html" class="link"><i class="fa fa-link"></i></a>
-                                                <a href="images/work-4.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
-                                            </div>
-                                            <img src="images/t-work-4.jpg" alt="" />
-                                        </div>
-                                    </div>
-
-                                    <div class="single_item aplication col-md-6 col-sm-12 col-xs-12">
-                                        <div class="work-inner">
-                                            <div class="work-overlay">
-                                                <h3> Picard Resume Template </h3>
-                                                <p>Donec pulvinar feugiat dui vel egestas. Nulla sit amet risus risus. Nulla libero vitae... </p>
-                                                <a href="work-single.html" class="link"><i class="fa fa-link"></i></a>
-                                                <a href="images/work-5.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
-                                            </div>
-                                            <img src="images/t-work-5.jpg" alt="" />
-                                        </div>
-                                    </div>
-
-                                    <div class="single_item web-design col-md-6 col-sm-12 col-xs-12">
-                                        <div class="work-inner">
-                                            <div class="work-overlay">
-                                                <h3> Picard Resume Template </h3>
-                                                <p>Donec pulvinar feugiat dui vel egestas. Nulla sit amet risus risus. Nulla libero vitae... </p>
-                                                <a href="work-single.html" class="link"><i class="fa fa-link"></i></a>
-                                                <a href="images/work-6.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
-                                            </div>
-                                            <img src="images/t-work-6.jpg" alt="" />
-                                        </div>
-                                    </div>
-
-                                    <div class="single_item development col-md-6 col-sm-12 col-xs-12">
-                                        <div class="work-inner">
-                                            <div class="work-overlay">
-                                                <h3> Picard Resume Template </h3>
-                                                <p>Donec pulvinar feugiat dui vel egestas. Nulla sit amet risus risus. Nulla libero vitae... </p>
-                                                <a href="work-single.html" class="link"><i class="fa fa-link"></i></a>
-                                                <a href="images/work-7.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
-                                            </div>
-                                            <img src="images/t-work-7.jpg" alt="" />
-                                        </div>
-                                    </div>
-
-                                    <div class="single_item development col-md-6 col-sm-12 col-xs-12">
-                                        <div class="work-inner">
-                                            <div class="work-overlay">
-                                                <h3> Picard Resume Template </h3>
-                                                <p>Donec pulvinar feugiat dui vel egestas. Nulla sit amet risus risus. Nulla libero vitae... </p>
-                                                <a href="work-single.html" class="link"><i class="fa fa-link"></i></a>
-                                                <a href="images/work-8.jpg" class="image-link lightbox"> <i class="fa fa-search"></i></a>
-                                            </div>
-                                            <img src="images/t-work-8.jpg" alt="" />
-                                        </div>
-                                    </div>
-
-                                </div> <!-- .portfolio_items end -->
-
-
-
-                                <!--footer-->
-                                <footer class="footer"> <p>  Copyright © 2016 All right reserved </p></footer>
-
-                            </div><!-- .col-md-12 .page -->
-                        </div><!--.row end-->
-                    </div> <!-- #portfolio .content .col-md-12 end -->
-
-                    <!--Blog Content-->
-                    <div id="blog" class="content col-md-12">
-                    	<div class="row">
-                    		<div class="page-title">
-                           		<h2>Blog Posts </h2>
-                            </div>
-                            <div class="col-md-12 page">
-                            	<!--Blog Post -->
-                                <div class="col-md-12 blog-post">
-                                	<div class="post-image">
-                                    	<img src="images/post-2.jpg" alt="">
-                                    </div>
-                                    <div class="post-title">
-                                    	<h1>Working at HIT, how do we work?</h1>
-                                    </div>
-                                    <div class="post-info">
-                                    	<span>December 06, 2016 / Business, Company / 2 Comments</span>
-                                    </div>
-                                    <p>Blanditiis dapibus, aliquet ullam in ut, conubia turpis dolore vivamus ligula deserunt, vehicula praesent iure? Magni? Porta minus pariatur ante dolore, veniam cubilia urna? Eligendi commodo fugiat voluptate, rerum orci neque voluptatem cum repellendus exercitation pellentesque.</p>
-                                    <a href="single-blog.html" class="but-big">LOAD MORE</a>
-                                </div>
-                                <!--Blog Post -->
-                                <div class="col-md-12 blog-post">
-                                	<div class="post-image">
-                                    	<iframe src="https://player.vimeo.com/video/99125930?title=0&byline=0&portrait=0" width="100%" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                    </div>
-                                    <div class="post-title">
-                                    	<h1>Working principle, how do we work?</h1>
-                                    </div>
-                                    <div class="post-info">
-                                    	<span>December 06, 2016 / Business, Company / 2 Comments</span>
-                                    </div>
-                                    <p>Blanditiis dapibus, aliquet ullam in ut, conubia turpis dolore vivamus ligula deserunt, vehicula praesent iure? Magni? Porta minus pariatur ante dolore, veniam cubilia urna? Eligendi commodo fugiat voluptate, rerum orci neque voluptatem cum repellendus exercitation pellentesque.</p>
-                                    <a href="single-blog.html" class="but-big">LOAD MORE</a>
-                                </div>
-                                <!--Blog Post -->
-                                <div class="col-md-12 blog-post">
-                                	<div class="post-image">
-                                    	<iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/275486953&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-                                    </div>
-                                    <div class="post-title">
-                                    	<h1>Working principle, how do we work?</h1>
-                                    </div>
-                                    <div class="post-info">
-                                    	<span>December 06, 2016 / Business, Company / 2 Comments</span>
-                                    </div>
-                                    <p>Blanditiis dapibus, aliquet ullam in ut, conubia turpis dolore vivamus ligula deserunt, vehicula praesent iure? Magni? Porta minus pariatur ante dolore, veniam cubilia urna? Eligendi commodo fugiat voluptate, rerum orci neque voluptatem cum repellendus exercitation pellentesque.</p>
-                                    <a href="single-blog.html" class="but-big">LOAD MORE</a>
-                                </div>
-
-
-                                <!--footer <nav class="codrops-demos">
-					<a class="current-demo" href="index.html">Demo 1</a>
-					<a href="index2.html">Demo 2</a>
-					<a href="index3.html">Demo 3</a>
-					<a href="index4.html">Demo 4</a>
-				</nav> -->
-                                <footer class="footer"> <p>  Copyright © 2020 All right reserved </p></footer>
-
-                            </div><!-- .col-md-12 .page -->
-                        </div><!--.row end-->
-                    </div> <!-- #blog .content .col-md-12 end -->
-
-                    <!--Contact Content-->
-                    <div id="contact" class="content col-md-12">
-                    	<div class="row">
-                    		<div class="page-title">
-                           		<h2>Contact </h2>
-                            </div>
-                            <div class="col-md-12 page">
-                            	<!-- Contact Form -->
-                            	<form class="col-md-6 contact-form"  method="POST" action="mail.php">
-                                	<h2 class="section-title">Contact Form</h2>
-                                    <!--Name-->
-                                    <input id="con_name" name="con_name" class="form-inp requie" type="text" placeholder="Name"  />
-                                    <!--Email-->
-                                    <input id="con_email" name="con_email" class="form-inp requie" type="text" placeholder="Email" />
-                                    <!--Message-->
-                                    <textarea name="con_message" id="con_message" class="requie" placeholder="Message" rows="8"></textarea>
-                                    <input id="con_submit" class="but-big" type="submit" value="SEND A MESSAGE">
-                                </form>
-                                <!-- Contact Information -->
-                                <div class="col-md-6 contact-info">
-                                	<h2 class="section-title">Contact Info</h2>
-                                       <ul class="info-list">
-                                            <li>Address : <span>Xidazhijie92, Nangang District, Harbin,HIT</span> </li>
-                                            <li>Phone : <span>+86 15210982898</span> </li>
-                                            <li>Website : <span>www.jianghp.com.cn</span> </li>
-                                            <li>Email : <span>chianghoping@gmail.com</span> </li>
-                                            <li>Skype : <span>jianghp</span> </li>
-                                        </ul>
-                                        <div class="social-icons">
-                                            <a href="https://www.facebook.com/hoping.chiang"><i class="fa fa-facebook"></i> </a>
-                                            <a href="https://twitter.com/ChiangHoping"><i class="fa fa-twitter"></i> </a>
-                                            <a href="#"><i class="fa fa-behance"></i> </a>
-                                            <a href="#"><i class="fa fa-dribbble"></i> </a>
-                                        </div>
-                                </div>
-                                <!--map-->
-      							<div id="map"></div>
-
-                                <!--footer-->
-                                <footer class="footer"> <p>  Copyright © 2020 All right reserved </p></footer>
-
-                            </div><!-- .col-md-12 .page -->
-                        </div><!--.row end-->
-                    </div> <!-- #contact .content .col-md-12 end -->
-
-                </div> <!-- #tab-container .col-md-9 end -->
-            </div> <!-- .row end-->
-        </div><!-- .container end -->
-    </div> <!-- #wrapper end-->
-
-    	<!-- Sidebar Menu -->
-        <div class="slidemenu-fixed" style="display:none;">
-            <button class="right-menu slidemenu-close"><i class="fa fa-times" aria-hidden="true"></i></button>
-            <div class="widget-out">
-                <!-- Search Widget-->
-                <div class="widget-search widget">
-                    <h2 class="widget-title">Search</h2>
-                    <form>
-                        <input class="search-inp" type="text" placeholder="Arama Yap...">
-                        <input class="search-ico" type="submit" value="">
-                    </form>
-                 </div>
-                <!-- Submenu Widget-->
-                <div class="widget-submenu widget">
-                    <h2 class="widget-title">Submenu</h2>
-                        <ul>
-                           <li> Standart Post </li>
-                           <li> Audio Post </li>
-                           <li> Video Post </li>
-                           <li> 404 Page </li>
-                           <li> Under Construction </li>
-                        </ul>
-                 </div>
-                 <!--Latest Posts-->
-                <div class="widget-blog widget">
-                    <h2 class="widget-title">Latest Posts</h2>
-                        <ul class="latest-post">
-                           <li>
-                                <div class="tag"><a href="#">#Business </a> <a href="#">#Company </a> </div>
-                                <a class="post" href="#">  I should be incapable of drawing a single stroke at the present moment and yet I feel that... </a>
-                                <span> August 23, 2016 <i class="fa fa-comments-o" aria-hidden="true"></i> 15 </span>
-                           </li>
-                           <li>
-                                <div class="tag"><a href="#">#Business </a> <a href="#">#Company </a> </div>
-                                <a class="post" href="#">  I should be incapable of drawing a single stroke at the present moment and yet I feel that... </a>
-                                <span> August 23, 2016 <i class="fa fa-comments-o" aria-hidden="true"></i> 15 </span>
-                           </li>
-                           <li>
-                                <div class="tag"><a href="#">#Business </a> <a href="#">#Company </a> </div>
-                                <a class="post" href="#">  I should be incapable of drawing a single stroke at the present moment and yet I feel that... </a>
-                                <span> August 23, 2016 <i class="fa fa-comments-o" aria-hidden="true"></i> 15 </span>
-                           </li>
-                        </ul>
-                 </div>
-                 <!-- Categories Widget-->
-                <div class="widget-submenu widget">
-                    <h2 class="widget-title">Categories</h2>
-                        <ul>
-                           <li> Web Design </li>
-                           <li> Photoshop  </li>
-                           <li> After Effect </li>
-                           <li> Dreamviewer </li>
-                        </ul>
-                 </div>
-                 <!-- Tags Widget-->
-                <div class="widget-tags widget">
-                    <h2 class="widget-title">Tags</h2>
-                        <ul>
-                           <li><a href="#"> Web Design </a></li>
-                           <li><a href="#"> Photoshop </a></li>
-                           <li><a href="#"> After Effect </a></li>
-                           <li><a href="#"> Dreamviewer </a></li>
-                           <li><a href="#"> Application </a></li>
-                           <li><a href="#"> Seo </a></li>
-                           <li><a href="#"> Other Issues </a></li>
-                        </ul>
-                 </div>
+            <div class="main-title">
+              <h1>Who am I?</h1>
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+	29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
             </div>
+
+            <!--End main title-->
+
+            <!--Content-->
+            <div class="content">
+
+              <!--Block content-->
+              <div class="block-content margBSmall">
+                <div class=" profile margBSmall">
+                  <h1>Hongping Jiang</h1>
+                  <h3>Particle Accelerator Physicist</h3>
+                </div>
+
+                <!--Row Particle Accelerator beam dynamics-->
+                <div class="row">
+                  <div class="col-md-6">
+                    <p>I am a physicist, an atheist, a gamer, a husband and a father. </p>
+                  </div>
+                  <!--<div class="col-md-6">
+                    <p>Sed ut perspiciatis unde omnis iste natus error
+                      sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                      eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                      vitae dicta sunt explicabo. Nemo enim ipsam voluptatem. </p>
+                     </div>
+                  -->
+                </div>
+                <!--End row-->
+
+              </div>
+              <!--End block content-->
+
+              <!--Block content-->
+              <div class="block-content">
+                <div class="info">
+
+                  <!--Row-->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul class="info-list clearfix">
+                        <li><span class="inf">Name </span> <span class="value">Hongping Jiang</span></li>
+                        <li><span class="inf">Date of birth</span> <span class="value"> October, 1986 </span></li>
+                        <li><span class="inf">Address</span> <span class="value"> Xidazhijie, Nangang District, Harbin,HIT
+                        </span></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="info-list">
+                        <li><span class="inf">Email</span> <span class="value">feixuehe@163.com</span></li>
+                        <li><span class="inf">Phone</span> <span class="value"> +8615210982898 </span></li>
+                        <li><span class="inf">Twitter</span> <span class="value">chiangHoping</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--End row-->
+
+                </div>
+              </div>
+              <!--End block content-->
+
+            </div>
+            <!--End content-->
+
+            <!--Main title-->
+
+            <div class="main-title">
+              <h1>professional skills</h1>
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--End main title-->
+
+            <!--Content-->
+            <div class="content">
+
+              <!--Block content-->
+              <div class="block-content margBMedium">
+
+                <!--Skill design-->
+                <div class=" skill des">
+
+                  <!--Row-->
+                  <div class="row ">
+                    <div class="vc">
+                      <div class="col-md-11">
+                        <ul class="skills-list clearfix">
+                          <li>
+                            <h4>Beam Dynamics</h4>
+                            <div class="progress">
+                              <div class="percentage"> 95% </div>
+                            </div>
+                          </li>
+                          <li>
+                            <h4>RF Structure Design</h4>
+                            <div class="progress">
+                              <div class="percentage"> 85% </div>
+                            </div>
+                          </li>
+                          <li>
+                            <h4>Machine Learning applied in Accelerator</h4>
+                            <div class="progress">
+                              <div class="percentage"> 70% </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-1">
+                        <div class="title des"> <span>Beam Dynamics</span> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End row-->
+
+                </div>
+                <!--End skill design-->
+
+              </div>
+              <!--End block content-->
+
+              <!--Block content-->
+              <div class="block-content margBMedium">
+
+                <!--Skill design-->
+                <div class=" skill dev">
+
+                  <!--Row-->
+                  <div class="row">
+                    <div class="vc">
+                      <div class="col-md-11">
+                        <ul class="skills-list clearfix">
+                          <li>
+                            <h4>TraceWin/IMPaCT</h4>
+                            <div class="progress">
+                              <div class="percentage"> 95% </div>
+                            </div>
+                          </li>
+                          <li>
+                            <h4>PARMTEQ/RFQGen</h4>
+                            <div class="progress">
+                              <div class="percentage"> 80% </div>
+                            </div>
+                          </li>
+                          <li>
+                            <h4>CST/HFSS</h4>
+                            <div class="progress">
+                              <div class="percentage"> 90% </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-1">
+                        <div class="title dev"> <span>SOFTWARES </span> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End row-->
+
+                </div>
+                <!--End skill design-->
+
+              </div>
+              <!--End block content-->
+
+              <!--Block content-->
+              <div class="block-content">
+
+                <!--Skill design-->
+                <div class=" skill prs">
+
+                  <!--Row-->
+                  <div class="row ">
+                    <div class="vc">
+                      <div class="col-md-11">
+                        <ul class="skills-list clearfix">
+                          <li>
+                            <h4>Responsible</h4>
+                            <div class="progress">
+                              <div class="percentage"> 85% </div>
+                            </div>
+                          </li>
+                          <li>
+                            <h4>Creative</h4>
+                            <div class="progress">
+                              <div class="percentage"> 95% </div>
+                            </div>
+                          </li>
+                          <li>
+                            <h4>Multitasking</h4>
+                            <div class="progress">
+                              <div class="percentage"> 90% </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-md-1">
+                        <div class="title prs"> <span>assets </span> </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End row-->
+
+                </div>
+                <!--End skill design-->
+
+              </div>
+              <!--End block content-->
+
+            </div>
+            <!--End content-->
+
+            <!--Main title-->
+
+            <div class="main-title">
+              <h1>experience</h1>
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--End main title-->
+
+            <!--Content-->
+            <div class="content">
+
+              <!--Block content-->
+              <div class="block-content ">
+
+                <!--Timeline-->
+                <div class="timeline experience">
+
+                  <!--Row-->
+                  <div class="row ">
+                    <div class="col-md-12">
+
+                      <!--Experience holder-->
+                      <div class="exp-holder margTop">
+
+                        <!--Experience-->
+                        <div class="exp">
+                          <div class="hgroup" >
+                            <h4>HIT-SESRI </h4>
+                            <h6><i class="icon-calendar"></i>January 2017 - <span class="current">Current</span></h6>
+                          </div>
+                          <p>In charge of 300MeV proton and heavy ion accelerator LINAC. Researcher of Harbin Institute of Technology.
+                            </p>
+                        </div>
+                        <!--End experience-->
+
+                        <!--Experience-->
+                        <div class="exp">
+                          <div class="hgroup" >
+                            <h4>XiPAF-Xi'an Proton Application Facility </h4>
+                            <h6><i class="icon-calendar"></i>Sept 2014 - Nov 2016</h6>
+                          </div>
+                          <p>Postdoctor of Tsinghua University.
+                            Design of RF coupler and buncher.
+                            Calculation of Impedence of ring.
+                            CPHS Beamline optimizing.
+                            DTL error analysis.
+
+                          </p>
+                        </div>
+                        <!--End experience-->
+
+                        <!--Experience-->
+                        <div class="exp">
+                          <div class="hgroup" >
+                            <h4> Ph.D student </h4>
+                            <h6><i class="icon-calendar"></i>September 2009 - July 2014</h6>
+                          </div>
+                          <p>Beam dynamics analiysis at Beam Halo Expriments at IHEP</p>
+                        </div>
+                        <!--End experience-->
+
+                      </div>
+                      <!--End experience holder-->
+                    </div>
+                  </div>
+                  <!--End row-->
+
+                </div>
+                <!--End timeline-->
+
+              </div>
+              <!--End block content-->
+
+            </div>
+            <!--End content-->
+
+            <!--Main title-->
+
+            <div class="main-title">
+              <h1>education</h1>
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--End main title-->
+
+            <!--Content-->
+            <div class="content">
+
+              <!--Block content-->
+              <div class="block-content">
+
+                <!--Timeline-->
+                <div class="timeline education">
+
+                  <!--Row-->
+                  <div class="row ">
+                    <div class="col-md-12">
+
+                      <!--Experience holder-->
+                      <div class="exp-holder margTop">
+
+                        <!--Experience-->
+                        <div class="exp">
+                          <div class="hgroup" >
+                            <h4>Bachelor Degree – Applied Physics </h4>
+                            <h6><i class="icon-calendar"></i>Sept 2005 - July 2009</h6>
+                          </div>
+                          <p>Jilin University. Physics college.</p>
+                        </div>
+                        <!--End experience-->
+
+                        <!--Experience-->
+                        <div class="exp">
+                          <div class="hgroup" >
+                            <h4>Doctoral Degree – Nuclear technology and apllications </h4>
+                            <h6><i class="icon-calendar"></i>Sept 2009 - July 2014</h6>
+                          </div>
+                          <p>Institute of High Energy Physics, Chinese Academy of Sciences.</p>
+                        </div>
+                        <!--End experience-->
+
+                        <!--Experience-->
+                        <div class="exp">
+                          <div class="hgroup" >
+                            <h4>Jiont of Accelerator School 2013 </h4>
+                            <h6><i class="icon-calendar"></i>Octo 2013 - Nov 2013</h6>
+                          </div>
+                          <p>Introduction to Particle Accelerator</p>
+                        </div>
+                        <!--End experience-->
+
+                      </div>
+                      <!--End experience holder-->
+                    </div>
+                  </div>
+                  <!--End row-->
+
+                </div>
+                <!--End timeline-->
+
+              </div>
+              <!--End block content-->
+
+            </div>
+            <!--End content-->
+
+            <!--Main title-->
+
+            <div class="main-title">
+              <h1>Skills</h1>
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--End main title-->
+
+            <!--Content-->
+            <div class="content">
+
+              <!--Block content-->
+              <div class="block-content ">
+
+                <!--Services-->
+                <div class="services">
+
+                  <!--Row-->
+                  <div class="row ">
+
+                    <!--Block-->
+                    <div class="block service tCenter">
+                      <div class="col-md-4">
+                        <div class="ico"> <i class="icon-lifebuoy"></i> </div>
+                        <div class="det">
+                          <h3>Great Support</h3>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="ico"> <i class="icon-print-1"></i> </div>
+                        <div class="det">
+                          <h3>Print &amp; Branding</h3>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="ico"> <i class="icon-megaphone"></i> </div>
+                        <div class="det">
+                          <h3>Marketing</h3>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--End block-->
+
+                  </div>
+                  <!--End row-->
+
+                  <!--Row-->
+                  <div class="row">
+
+                    <!--Divider-->
+                    <div class="divider-m tCenter margTSmall margBSmall clearfix">
+                      <div class="col-md-12">
+                        <div class="zigzag medium clearfix "  data-svg-drawing="yes" >
+                          <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+					29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    <!--End divider-->
+
+                  </div>
+                  <!--End row-->
+
+                  <!--Row-->
+                  <div class="row ">
+
+                    <!--Block-->
+                    <div class="block service tCenter">
+                      <div class="col-md-4">
+                        <div class="ico"> <i class="icon-monitor"></i> </div>
+                        <div class="det">
+                          <h3>RFQ Design</h3>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="ico"> <i class="icon-tools"></i> </div>
+                        <div class="det">
+                          <h3>Control system development</h3>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="ico"> <i class="icon-lamp"></i> </div>
+                        <div class="det">
+                          <h3>DTL design</h3>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!--End block-->
+
+                  </div>
+                  <!--End row-->
+
+                </div>
+                <!--End servcices-->
+
+              </div>
+              <!--End block content-->
+
+            </div>
+            <!--End content-->
+
+            <!--Main title-->
+
+            <div class="main-title">
+              <h1>testimonials</h1>
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--End main title-->
+
+            <!--Content-->
+            <div class="content">
+
+              <!--Block content-->
+              <div class="block-content ">
+
+                <!--Testimonilas-->
+                <div class="testimonials">
+
+                  <!--Row-->
+                  <div class="row ">
+                    <div class="col-md-12">
+
+                      <!--Slider-->
+                      <div class="testi clearfix ">
+                        <ul id="testimonial-carousel">
+                          <li>
+                            <div class="block-quote">
+                              <div class="block-img"><img alt="" src="img/testimonial/1.jpg"></div>
+                              <div class="block-icon"><i class="icon-quote"></i></div>
+                              <h3 class="block-profile">Hongping Jiang <span> CEO / Split Inc</span></h3>
+                              <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo
+                                inventore veritatis et quasi architecto beatae vitae dicta.</blockquote>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="block-quote">
+                              <div class="block-img"><img alt="" src="img/testimonial/2.jpg"></div>
+                              <div class="block-icon"><i class="icon-quote"></i></div>
+                              <h3 class="block-profile">Hongping Jiang<span> CEO / Split Inc</span></h3>
+                              <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                                totam rem aperiam, eaque ipsa quae ab illo
+                                inventore veritatis et quasi architecto beatae vitae dicta.</blockquote>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!--End  slider-->
+
+                    </div>
+                  </div>
+                  <!--End row-->
+
+                </div>
+                <!--End testimonials-->
+
+              </div>
+              <!--End block content-->
+
+            </div>
+<<<<<<< HEAD
         </div>
         <div id="overlay" style="display:none;"></div>
 
@@ -752,7 +798,782 @@
 
 
  	 </script>
+=======
+            <!--End content-->
 
+            <!--Button-->
+            <div class="button margTop ofsInTop tCenter">
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+			29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+>>>>>>> parent of dff3af7... change another model of website
 
+            </div>
+            <!--End button-->
+
+          </div>
+          <!--End about-->
+
+        </section>
+        <!--End about tab-->
+
+        <!--Portfolio Tab-->
+        <section id="portfolio" class="bgWhite ofsInBottom">
+
+          <!--Portfolio -->
+          <div class="portfolio">
+
+            <!--Main title-->
+
+            <div class="main-title">
+              <h1>my works</h1>
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+				29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--End main title-->
+
+            <!--Content-->
+            <div class="content">
+
+              <!--Block content-->
+              <div class="block-content ">
+
+                <!--Works-->
+                <div class="works">
+
+                  <!--Row-->
+                  <div class="row">
+                    <div class="block-filter tCenter">
+                      <ul id="category" class="filter">
+                        <li><a data-filter="all" href="#" class="active">all</a></li>
+                        <li><a data-filter="web" href="#">RF design</a></li>
+                        <li><a data-filter="graphic" href="#">Accelerator design</a></li>
+                        <li><a data-filter="motion" href="#">Beam dynamics</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--End row-->
+
+                  <!--Row-->
+                  <div class="row">
+                    <div class="divider-m tCenter margTSSmall margBSmall clearfix">
+                      <div class="col-md-12">
+                        <div class="zigzag medium clearfix "  data-svg-drawing="yes" >
+                          <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                            <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--End row-->
+
+                  <!--Row-->
+                  <div class="row">
+                    <ul class="work">
+                      <li class="col-md-4 ">
+
+                        <!--Item-->
+                        <div class="item web"> <a  href="project_single.html">
+                          <div class="desc">
+                            <h3 class="proj-desc">Project Name <span class="zigzag work clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                              </span> <span>web design</span></h3>
+                          </div>
+                          <img alt="" src="img/portfolio/1.jpg"> </a> </div>
+                        <!--End item-->
+
+                      </li>
+                      <li class="col-md-4" >
+
+                        <!--Item-->
+                        <div class="item web"> <a class="box" href="img/portfolio/2.jpg">
+                          <div class="desc">
+                            <h3 class="proj-desc">Project Name <span class="zigzag work clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                              </span> <span>web design</span></h3>
+                          </div>
+                          <img alt="" src="img/portfolio/2.jpg"> </a> </div>
+                        <!--End item-->
+
+                      </li>
+                      <li class="col-md-4" >
+
+                        <!--Item-->
+                        <div class="item graphic"> <a class="box" href="img/portfolio/3.jpg">
+                          <div class="desc">
+                            <h3 class="proj-desc">Project Name <span class="zigzag work clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                              </span> <span>graphic design</span></h3>
+                          </div>
+                          <img alt="" src="img/portfolio/3.jpg"> </a> </div>
+                        <!--End item-->
+
+                      </li>
+                      <li class="col-md-4">
+
+                        <!--Item-->
+                        <div class="item web"> <a class="box" href="img/portfolio/4.jpg">
+                          <div class="desc">
+                            <h3 class="proj-desc">Project Name <span class="zigzag work clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                              </span> <span>web design</span></h3>
+                          </div>
+                          <img alt="" src="img/portfolio/4.jpg"> </a> </div>
+                        <!--End item-->
+
+                      </li>
+                      <li class="col-md-4">
+
+                        <!--Item-->
+                        <div class="item graphic"> <a class="box" href="img/portfolio/5.jpg">
+                          <div class="desc">
+                            <h3 class="proj-desc">Project Name <span class="zigzag work clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                              </span> <span>graphic design</span></h3>
+                          </div>
+                          <img alt="" src="img/portfolio/5.jpg"> </a> </div>
+                        <!--End item-->
+
+                      </li>
+                      <li class="col-md-4">
+
+                        <!--Item-->
+                        <div class="item web"> <a class="box" href="img/portfolio/6.jpg">
+                          <div class="desc">
+                            <h3 class="proj-desc">Project Name <span class="zigzag work clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                              </span> <span>web design</span></h3>
+                          </div>
+                          <img alt="" src="img/portfolio/6.jpg"> </a> </div>
+                        <!--End item-->
+
+                      </li>
+                      <li class="col-md-4">
+
+                        <!--Item-->
+                        <div class="item motion"> <a class="popup-vimeo" href="https://vimeo.com/67429593">
+                          <div class="desc">
+                            <h3 class="proj-desc">Project Name <span class="zigzag work clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                              </span> <span>motion graphic</span></h3>
+                          </div>
+                          <img alt="" src="img/portfolio/7.jpg"> </a> </div>
+                        <!--End item-->
+
+                      </li>
+                      <li class="col-md-4">
+
+                        <!--Item-->
+                        <div class="item web"> <a  href="project_single.html">
+                          <div class="desc">
+                            <h3 class="proj-desc">Project Name <span class="zigzag work clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                              </span> <span>web design</span></h3>
+                          </div>
+                          <img alt="" src="img/portfolio/8.jpg"> </a> </div>
+                        <!--End item-->
+
+                      </li>
+                      <li class="col-md-4">
+
+                        <!--Item-->
+                        <div class="item graphic"> <a class="box" href="img/portfolio/9.jpg">
+                          <div class="desc">
+                            <h3 class="proj-desc">Project Name <span class="zigzag work clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                              </span> <span>graphic design</span></h3>
+                          </div>
+                          <img alt="" src="img/portfolio/9.jpg"> </a> </div>
+                        <!--End item-->
+
+                      </li>
+                      <li class="col-md-4 ">
+
+                        <!--Item-->
+                        <div class="item graphic"> <a  href="http://www.mutationmedia.net/" target="_blank">
+                          <div class="desc">
+                            <h3 class="proj-desc">Project Name <span class="zigzag work clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                              </span> <span>graphic design</span></h3>
+                          </div>
+                          <img alt="" src="img/portfolio/10.jpg"> </a> </div>
+                        <!--End item-->
+
+                      </li>
+                      <li class="col-md-4">
+
+                        <!--Item-->
+                        <div class="item web"> <a class="box" href="img/portfolio/11.jpg">
+                          <div class="desc">
+                            <h3 class="proj-desc">Project Name <span class="zigzag work clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                              </span> <span>web design</span></h3>
+                          </div>
+                          <img alt="" src="img/portfolio/11.jpg"> </a> </div>
+                        <!--End item-->
+
+                      </li>
+                      <li class="col-md-4">
+
+                        <!--Item-->
+                        <div class="item motion"> <a class="popup-youtube" href="https://www.youtube.com/watch?v=gTFljCRnGN4">
+                          <div class="desc">
+                            <h3 class="proj-desc">Project Name <span class="zigzag work clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="25" height="10" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+		29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                              </span> <span>motion graphic</span></h3>
+                          </div>
+                          <img alt="" src="img/portfolio/12.jpg"> </a> </div>
+                        <!--End item-->
+
+                      </li>
+                    </ul>
+                  </div>
+                  <!--End row-->
+
+                </div>
+                <!--End works-->
+
+                <div class="clearfix"></div>
+              </div>
+              <!--End block content-->
+
+            </div>
+            <!--End content-->
+
+            <!--Button-->
+            <div class="button ofsInTop tCenter clearfix">
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+			29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+
+            </div>
+            <!--End button-->
+
+          </div>
+          <!--End portfolio-->
+
+        </section>
+        <!--End portfolio tab-->
+
+        <!--Blog Tab-->
+        <section id="blog" class="bgWhite ofsInBottom">
+
+          <!--Blog -->
+          <div class="blog">
+
+            <!--Main title-->
+
+            <div class="main-title">
+              <h1>latest news</h1>
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+						29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--End main title-->
+
+            <!--Content-->
+            <div class="content">
+
+              <!--Block content-->
+              <div class="block-content ">
+
+                <!--Works-->
+                <div class="blog">
+
+                  <!--Row-->
+                  <div class="row">
+
+                    <!--Blog posts-->
+                    <div class="block-posts ">
+
+                      <!--Block post-->
+                      <div class="block-post ">
+                        <div class="col-md-12">
+                          <div class="post-media margBSmall"> <img src="img/blog/1.jpg" alt=""/> </div>
+                          <div class="post-title"> <a href="blog_single.html">
+                            <h1>Which design layout solution should you use ?</h1>
+                            </a> <span class="meta-date">23 Sep</span> </div>
+                          <ul class="post-meta">
+                            <li> <i class="icon-user"></i> <span>Post by <a href="#">Benaissa Ghrib</a> </span> </li>
+                            <li> <i class="icon-layout"></i> <span>Tagged in <a href="#">Web Design</a> </span> </li>
+                            <li> <i class="icon-comment"></i> <span>Comments <a href="#">(2)</a> </span> </li>
+                          </ul>
+                          <hr>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit,
+                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                          <a href="blog_single.html" class="but brd">Read More</a> </div>
+                        <div class="clearfix"></div>
+
+                        <!--Divider-->
+                        <div class="divider-m tCenter margTSmall margBottom clearfix">
+                          <div class="col-md-12">
+                            <div class="zigzag medium clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+						29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <!--End divider-->
+
+                      </div>
+                      <!--End block post-->
+
+                      <!--Block post-->
+                      <div class="block-post">
+                        <div class="col-md-12">
+                          <div class="post-title"> <a href="blog_single.html">
+                            <h1>Standar blog post without image</h1>
+                            </a> <span class="meta-date">23 Sep</span> </div>
+                          <ul class="post-meta">
+                            <li> <i class="icon-user"></i> <span>Post by <a href="#">Benaissa Ghrib</a> </span> </li>
+                            <li> <i class="icon-layout"></i> <span>Tagged in <a href="#">Web Design</a> </span> </li>
+                            <li> <i class="icon-comment"></i> <span>Comments <a href="#">(2)</a> </span> </li>
+                          </ul>
+                          <hr>
+                          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit,
+                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                          <a href="blog_single.html" class="but brd">Read More</a> </div>
+                        <div class="clearfix"></div>
+
+                        <!--Divider-->
+                        <div class="divider-m tCenter margTSmall margBottom clearfix">
+                          <div class="col-md-12">
+                            <div class="zigzag medium clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+						29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <!--End divider-->
+
+                      </div>
+                      <!--End block post-->
+
+                      <!--Block post-->
+                      <div class="block-post ">
+                        <div class="col-md-12">
+                          <div class="post-title"> <a href="blog_single.html">
+                            <h1>A blockquote blog post style</h1>
+                            </a> <span class="meta-date">23 Sep</span> </div>
+                          <ul class="post-meta">
+                            <li> <i class="icon-user"></i> <span>Post by <a href="#">Benaissa Ghrib</a> </span> </li>
+                            <li> <i class="icon-layout"></i> <span>Tagged in <a href="#">Web Design</a> </span> </li>
+                            <li> <i class="icon-comment"></i> <span>Comments <a href="#">(2)</a> </span> </li>
+                          </ul>
+                          <hr>
+                          <div class="block-quote margTMedium">
+                            <div class="block-img"><img src="img/testimonial/1.jpg" alt=""></div>
+                            <div class="block-icon"><i class="icon-quote"></i></div>
+                            <h3 class="block-profile">Hongping Jiang<span> CEO / The Third Inc</span></h3>
+                            <blockquote>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                              totam rem aperiam, eaque ipsa quae ab illo
+                              inventore veritatis et quasi architecto beatae vitae dicta.</blockquote>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+
+                        <!--Divider-->
+                        <div class="divider-m tCenter margTSmall margBottom clearfix">
+                          <div class="col-md-12">
+                            <div class="zigzag medium clearfix "  data-svg-drawing="yes" >
+                              <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="45" height="5" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+					29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <!--End divider-->
+
+                      </div>
+                      <!--End block post-->
+
+                    </div>
+                    <!--End blog posts-->
+
+                  </div>
+                  <!--End row-->
+
+                  <div class="block-all tCenter margTSmall margBSmall"> <a class="but  brd" href="blog.html">View all blog posts</a> </div>
+                </div>
+                <!--End blog-->
+
+              </div>
+              <!--End block content-->
+
+            </div>
+            <!--End content-->
+
+            <!--Button-->
+            <div class="button ofsInTop tCenter">
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+					29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+
+            </div>
+            <!--End button-->
+
+          </div>
+          <!--End blog-->
+
+        </section>
+        <!--End blog tab-->
+
+        <!--Contact Tab-->
+        <section id="contact" class="bgWhite ofsInBottom">
+
+          <!--Contact -->
+          <div class="contact">
+
+            <!--Main title-->
+
+            <div class="main-title">
+              <h1>map location</h1>
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+							29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--End main title-->
+
+            <!--Content-->
+            <div class="content">
+
+              <!--Block content-->
+              <div class="block-content ">
+
+                <!--Map-->
+                <div class="block-map">
+
+                  <!--Row-->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div id="map"></div>
+                    </div>
+                  </div>
+                  <!--End row-->
+
+                </div>
+                <!--End map-->
+
+              </div>
+              <!--End block content-->
+
+            </div>
+            <!--End content-->
+
+            <!--Main title-->
+
+            <div class="main-title">
+              <h1>contact info</h1>
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+							29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--End main title-->
+
+            <!--Content-->
+            <div class="content">
+
+              <!--Block content-->
+              <div class="block-content ">
+
+                <!--Info-->
+                <div class="block-info">
+
+                  <!--Row-->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="info-holder   margTMedium">
+
+                        <!--Address info-->
+                        <div class="address-info"> <i class="icon-location"></i>
+                          <p> <br>
+                            Harbin, Heilongjiang China.</p>
+                        </div>
+                        <!--End address info-->
+
+                        <!--Contact info-->
+                        <div class="contact-info tCenter">
+                          <ul>
+                            <li>
+                              <div class="ico"><i class="icon-mail"></i></div>
+                              <p>Email : chianghoping@gmail.com </p>
+                            </li>
+                            <li>
+                              <div class="ico"><i class="icon-phone"></i></div>
+                              <p>Tel : + 8615210982898</p>
+                            </li>
+                            <li>
+                              <div class="ico"><i class="icon-link"></i></div>
+                              <p>WebSite : <a href="#">www.jianghp.com.cn</a></p>
+                            </li>
+                          </ul>
+                        </div>
+                        <!--End contact info-->
+
+                      </div>
+                    </div>
+                  </div>
+                  <!--End row-->
+
+                </div>
+                <!--End info-->
+
+              </div>
+              <!--End block content-->
+
+            </div>
+            <!--End content-->
+
+            <!--Main title-->
+            <div>
+              <p> My Websites Lists!
+                <ul>
+                <li><a  href="https://feixuehe.wang/">feixuehe.wang</a></li>
+                <li><a  href="https://feixuehe.club/">feixuehe.club</a></li>
+                <li><a  href="https://jiangzhang.xyz/">jiangzhang.xyz</a></li>
+                <li><a  href="https://jiangyundi.com/">jiangyundi.com</a></li>
+                <li><a  href="https://jiangyd.com/">jiangyd.com</a></li>
+                <li><a  href="https://feixuehe.wang/intro-html/">intro-html</a></li>
+                <li><a  href="https://feixuehe.wang/markdown-portfolio/">markdown-portfolio</a></li>
+                <li><a  href="https://feixuehe.wang/security-on-github/">security-on-github</a></li>
+                <li><a  href="https://feixuehe.wang/python-random-quote/">python-random-quote</a></li>
+                <li><a  href="https://feixuehe.wang/github-slideshow/">github-slideshow</a></li>
+                <li><a  href="https://feixuehe.wang/github-pages-with-jekyll/">github-pages-with-jekyll</a></li>
+                <li><a  href="https://feixuehe.wang/">View my complete profile</a></li>
+                </ul>
+              </p>
+            </div>
+            <div class="main-title">
+              <h1>send me an email</h1>
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+					29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!--End main title-->
+
+            <!--Content-->
+            <div class="content">
+
+              <!--Block content-->
+              <div class="block-content ">
+
+                <!--Contact-->
+                <div class="block-contact margBSSmall">
+
+                  <!--Row-->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <form class="contact-form" method="post" action="send.php">
+
+                        <!--Input columns-->
+                        <div class="input-columns clearfix">
+                          <div class="column1">
+                            <div class="column-inner">
+                              <input type="text" placeholder="Name" value="" id="name" name="name">
+                            </div>
+                          </div>
+
+                          <!--Column-->
+                          <div class="column2">
+                            <div class="column-inner">
+                              <input type="text" placeholder="Email" value="" id="email" name="email">
+                            </div>
+                          </div>
+                          <!--End column-->
+
+                        </div>
+                        <!--End input columns-->
+
+                        <input type="text" placeholder="Subject" value="" id="subject" name="subject">
+                        <textarea name="message" placeholder="Message" id="message" cols="45" rows="10"></textarea>
+                        <input type="submit" value="send your email" class="but opc-2 submit">
+                      </form>
+
+                      <!--Contact form message-->
+                      <div id="success">
+                        <h2>Your message has been sent. Thank you!</h2>
+                      </div>
+                      <div id="error">
+                        <h2>Sorry your message can not be sent.</h2>
+                      </div>
+                      <!--End contact form message-->
+
+                    </div>
+                  </div>
+                  <!--End row-->
+
+                </div>
+                <!--End contact-->
+
+              </div>
+              <!--End block content-->
+
+            </div>
+            <!--End content-->
+
+            <!--Button-->
+            <div class="button ofsInTop tCenter">
+              <div class="divider">
+                <div class="zigzag large clearfix "  data-svg-drawing="yes" >
+                  <svg xml:space="preserve" viewBox="0 0 69.172 14.975" width="37" height="28" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <path d="M1.357,12.26 10.807,2.81 20.328,12.332
+				29.781,2.879 39.223,12.321 48.754,2.79 58.286,12.321 67.815,2.793 "  style="stroke-dasharray: 93.9851, 93.9851; stroke-dashoffset: 0;"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <!--End button-->
+
+          </div>
+          <!--End contact-->
+
+        </section>
+        <!--End contact tab-->
+
+      </div>
+      <!--End right content-->
+
+    </div>
+    <!--End  row-->
+
+  </div>
+  <!--End  container-->
+
+</div>
+<!--End wrapper-->
+
+<!--Javascript-->
+<script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="js/jquery-migrate-1.2.1.js" type="text/javascript"></script>
+<script src="js/owl.carousel.js" type="text/javascript"></script>
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script src="js/jquery.easytabs.min.js" type="text/javascript"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
+<script src="js/placeholders.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/Switcher/switcher.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+<script>
+
+(function($) {
+  "use strict";
+
+$(document).ready(function(){
+
+	$('#wrapper').easytabs({
+	animate			: true,
+	updateHash		: false,
+	transitionIn	:'fadeIn',
+	transitionOut	:'fadeOut',
+	animationSpeed	:100,
+	tabActiveClass	:'active',
+	tabs            :' #main-nav.tabbed > ul > li ',
+	transitionInEasing: 'linear',
+  transitionOutEasing: 'linear'
+});
+
+});
+
+})(jQuery);
+
+</script>
+<!-- Google analytics -->
+<!-- End google analytics -->
 </body>
 </html>
