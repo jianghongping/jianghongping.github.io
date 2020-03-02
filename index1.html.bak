@@ -1,13 +1,8 @@
 <!doctype html>
-<html lang="en" class="no-js">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Hongping's Website</title>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/demo.css" />
-	<link rel="stylesheet" type="text/css" href="css/component.css" />
+    <meta charset="UTF-8">
+    <title>Home Page</title>
 	<meta name="description" content="Picard Html vCard">
     <meta name="keywords" content="business, personal, portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,19 +41,6 @@
 </head>
 
 <body>
-		<div class="container demo-1">
-			<div class="content">
-				<div id="large-header" class="large-header">
-					<canvas id="demo-canvas"></canvas>
-					<h1 class="main-title">Hongping <span class="thin"></span></h1>
-				</div>
-				
-			</div>
-		</div><!-- /container -->
-		<script src="js/TweenLite.min.js"></script>
-		<script src="js/EasePack.min.js"></script>
-		<script src="js/rAF.js"></script>
-		<script src="js/demo-1.js"></script>
 
 	 <!-- Preloading -->
     <div id="preloader">
@@ -100,12 +82,12 @@
                     </div>
                     <div class="profile-info">
                     	<div class="name-job">
-                            <h1>Hongping Jiang</h1>
-                            <span class="job"> Assit Researcher </span>
+                            <h1>Nicky Chang</h1>
+                            <span class="job"> UI Developer </span>
                         </div><!-- .name-job -->
                         <div class="social-icons">
-                            <a class="facebook" href="https://www.facebook.com/hoping.chiang"><i class="fa fa-facebook"></i> </a>
-                            <a class="twitter" href="https://twitter.com/ChiangHoping"><i class="fa fa-twitter"></i> </a>
+                            <a class="facebook" href="#"><i class="fa fa-facebook"></i> </a>
+                            <a class="twitter" href="#"><i class="fa fa-twitter"></i> </a>
                             <a class="behance" href="#"><i class="fa fa-behance"></i> </a>
                             <a  class="dribbble" href="#"><i class="fa fa-dribbble"></i> </a>
                         </div>
@@ -135,20 +117,20 @@
                             <div class="col-md-12 pinfo">
                                 <div class="col-md-12 about-info">
                                     <ul class="info-list">
-                                    	<li>Full Name : <span>Hongping Jiang</span> </li>
-                                        <li>Birthday : <span>Octo, 1986</span> </li>
-                                        <li>Job : <span>Assit Researcher</span> </li>
-                                        <li>Website : <span>www.jianghp.com.cn</span> </li>
-                                        <li>Email : <span>chianghoping@gmail.com</span> </li>
-                                        <li>Phone : <span>8615210982898</span> </li>
+                                    	<li>Full Name : <span>Nicky Chang</span> </li>
+                                        <li>Birthday : <span>April 2, 1988</span> </li>
+                                        <li>Job : <span>UI Developer</span> </li>
+                                        <li>Website : <span>www.chrisjohnson.com</span> </li>
+                                        <li>Email : <span>c.nicky0402@gmail.com</span> </li>
+                                        <li>Phone : <span>0918518952</span> </li>
                                     </ul>
                                 </div> <!-- .col-md-4 .about-info -->
                              </div><!-- .col-md-12 .spotted -->
 
                             <div class="col-md-12 spotted ptext">
                             <div class="col-md-12 about-text">
-                                <h2 class="section-title">I’m Particle Accelerator Designer</h2>
-                                <p>I am a physicist, an atheist, a gamer, a husband and a father. When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me.
+                                <h2 class="section-title">I’m Web Designer</h2>
+                                <p>When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me.
 
 <br/><br/>When I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing, Oh, would I could describe these conceptions, could impress upon paper all that is living so full and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite God! </p>
                             </div><!--.col-md-12 .about-text end-->
@@ -158,27 +140,27 @@
                                 <div class="col-md-6 my-skills">
                                     <ul class="skill-list">
                                         <li>
-                                            <h3>Beam Dynamics</h3>
+                                            <h3>Photoshop</h3>
                                             <div class="progress">
-                                                <div class="percentage" style="width:95%;"></div>
+                                                <div class="percentage" style="width:80%;"></div>
                                             </div>
                                         </li>
                                         <li>
-                                            <h3>RF Structure Design</h3>
+                                            <h3>Dreamviewer</h3>
                                             <div class="progress">
-                                                <div class="percentage" style="width:95%;"></div>
+                                                <div class="percentage" style="width:60%;"></div>
                                             </div>
                                         </li>
                                         <li>
-                                            <h3>Machine Learning Applied in Accelerator</h3>
+                                            <h3>After Effect</h3>
                                             <div class="progress">
-                                                <div class="percentage" style="width:84%;"></div>
+                                                <div class="percentage" style="width:30%;"></div>
                                             </div>
                                         </li>
                                         <li>
-                                            <h3>TraceWin/IMPaCT</h3>
+                                            <h3>Illustrator</h3>
                                             <div class="progress">
-                                                <div class="percentage" style="width:95%;"></div>
+                                                <div class="percentage" style="width:75%;"></div>
                                             </div>
                                         </li>
                                     </ul>
@@ -186,27 +168,27 @@
                                  <div class="col-md-6 my-skills">
                                     <ul class="skill-list">
                                         <li>
-                                            <h3>PARMELA/WinAGILE</h3>
-                                            <div class="progress">
-                                                <div class="percentage" style="width:85%;"></div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <h3>RFQGen/LORASR</h3>
+                                            <h3>Photoshop</h3>
                                             <div class="progress">
                                                 <div class="percentage" style="width:80%;"></div>
                                             </div>
                                         </li>
                                         <li>
-                                            <h3>CST/HFSS</h3>
+                                            <h3>Dreamviewer</h3>
                                             <div class="progress">
-                                                <div class="percentage" style="width:90%;"></div>
+                                                <div class="percentage" style="width:60%;"></div>
                                             </div>
                                         </li>
                                         <li>
-                                            <h3>Python/Matlab</h3>
+                                            <h3>After Effect</h3>
                                             <div class="progress">
-                                                <div class="percentage" style="width:95%;"></div>
+                                                <div class="percentage" style="width:30%;"></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h3>Illustrator</h3>
+                                            <div class="progress">
+                                                <div class="percentage" style="width:75%;"></div>
                                             </div>
                                         </li>
                                     </ul>
@@ -219,48 +201,48 @@
                                     <i class="fa fa-apple"></i>
                                     <span>
                                         <b>Applications</b>
-                                        <p>Proton Therapy etc.</p>
+                                        <p>Duis vitae odio gravida</p>
                                     </span>
                                 </div> <!-- .service .col-md-4 .col-sm-6 end -->
                                 <div class="service col-md-4 col-sm-6">
                                     <i class="fa fa-desktop"></i>
                                     <span>
-                                        <b>RF Stucture Design</b>
-                                        <p>Cavity and coupler</p>
+                                        <b>Web Design</b>
+                                        <p>Mauris eleifend dapibus</p>
                                     </span>
                                 </div> <!-- .service .col-md-4 .col-sm-6 end -->
                                 <div class="service col-md-4 col-sm-6">
                                     <i class="fa fa-picture-o"></i>
                                     <span>
-                                        <b>Beam Dynamics</b>
-                                        <p>Space-Charge Effect</p>
+                                        <b>Illustrations</b>
+                                        <p>Posuere ac sem nec</p>
                                     </span>
                                 </div> <!-- .service .col-md-4 .col-sm-6 end -->
                                 <div class="service col-md-4 col-sm-6">
                                     <i class="fa fa-code"></i>
                                     <span>
-                                        <b>Calculation Impedance</b>
-                                        <p>Synchrotron ring</p>
+                                        <b>Development</b>
+                                        <p>Curabitur euismod sapien</p>
                                     </span>
                                 </div> <!-- .service .col-md-4 .col-sm-6 end -->
                                 <div class="service col-md-4 col-sm-6">
                                     <i class="fa fa-search"></i>
                                     <span>
-                                        <b>Beamline Optimization</b>
-                                        <p>For different purposes</p>
+                                        <b>Seo Optimization</b>
+                                        <p>Etiam vitae condimentum</p>
                                     </span>
                                 </div> <!-- .service .col-md-4 .col-sm-6 end -->
                                 <div class="service col-md-4 col-sm-6">
                                     <i class="fa fa-support"></i>
                                     <span>
-                                        <b>Machine Learning</b>
-                                        <p>applied in accelerator</p>
+                                        <b>Speed Support</b>
+                                        <p>Praesent nisl turpis</p>
                                     </span>
                                 </div> <!-- .service .col-md-4 .col-sm-6 end -->
                             </div> <!-- .col-md-12 .services -->
                             </div> <!-- .col-md-12 .spotted-->
                                 <!--footer-->
-                                <footer class="footer"> <p>  Copyright © 2020 All right reserved </p></footer>
+                                <footer class="footer"> <p>  Copyright © 2016 All right reserved </p></footer>
 
 
                         </div><!--.row end-->
@@ -280,18 +262,18 @@
                                 	</div>
                                     <div class="resume-out">
                                     	<div class="resume-info">
-                                        	<h2 class="info-title">Doctoral Degree-University of Chinese Academy of Sciences</h2>
-                                            <span class="info-date">2009 - 2014 </span>
+                                        	<h2 class="info-title">Abc University of Los Angeles</h2>
+                                            <span class="info-date">2010 - Present </span>
                                             <p>Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam tincidunt augue in leo feugiat, quis interdum nisi sollicitudin. Suspendisse vulputate diam sit amet rutrum dictum. Donec tempus a lectus quis luctus. Vivamus sed maximus justo, sed aliquet purus. Etiam ut velit gravida, mollis turpis nec, tristique erat.</p>
                                         </div> <!-- .resume-info -->
                                         <div class="resume-info">
-                                        	<h2 class="info-title">Jiont Accelerator School 2013</h2>
-                                            <span class="info-date">Octo 2013 - November 2013 </span>
+                                        	<h2 class="info-title">Drawing Course</h2>
+                                            <span class="info-date">2003 - 2004 </span>
                                             <p>Duis ipsum ligula, feugiat nec auctor vitae, porta sit amet urna. Praesent ex lorem, porta nec aliquet eu, ullamcorper eget nibh. Vivamus aliquet orci a elementum tincidunt. Etiam sed mi vel nibh varius viverra sed ac <est class=""></est></p>
                                         </div> <!-- .resume-info -->
                                         <div class="resume-info">
-                                        	<h2 class="info-title">Bachelor Degree-Jilin University</h2>
-                                            <span class="info-date">2005 - 2009 </span>
+                                        	<h2 class="info-title">Abc High School</h2>
+                                            <span class="info-date">2000 - 2003 </span>
                                             <p>Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam tincidunt augue in leo feugiat, quis interdum nisi sollicitudin. Suspendisse vulputate diam sit amet rutrum dictum. Donec tempus a lectus quis luctus. Vivamus sed maximus justo, sed aliquet purus. Etiam ut velit gravida, mollis turpis nec, tristique erat.</p>
                                         </div> <!-- .resume-info -->
                                     </div> <!-- .resume-out end -->
@@ -304,25 +286,25 @@
                                 	</div>
                                     <div class="resume-out">
                                     	<div class="resume-info">
-                                        	<h2 class="info-title">Assit Researcher - Harbin Institute of Technology</h2>
-                                            <span class="info-date">2017 - Present </span>
-                                            <p>In charge of 300MeV proton and heavy ion accelerator LINAC. Researcher of Harbin Institute of Technology. Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam tincidunt augue in leo feugiat, quis interdum nisi sollicitudin. Suspendisse vulputate diam sit amet rutrum dictum. Donec tempus a lectus quis luctus. Vivamus sed maximus justo, sed aliquet purus. Etiam ut velit gravida, mollis turpis nec, tristique erat.</p>
+                                        	<h2 class="info-title">Art Director - Facebook Inc</h2>
+                                            <span class="info-date">2004 - 2008 </span>
+                                            <p>Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam tincidunt augue in leo feugiat, quis interdum nisi sollicitudin. Suspendisse vulputate diam sit amet rutrum dictum. Donec tempus a lectus quis luctus. Vivamus sed maximus justo, sed aliquet purus. Etiam ut velit gravida, mollis turpis nec, tristique erat.</p>
                                         </div> <!-- .resume-info -->
                                         <div class="resume-info">
-                                        	<h2 class="info-title">Postdoctor - Tsinghua University</h2>
-                                            <span class="info-date">2014 - 2016 </span>
-                                            <p>Postdoctor of Tsinghua University. Design of RF coupler and buncher. Calculation of Impedence of ring. CPHS Beamline optimizing. DTL error analysis. Duis ipsum ligula, feugiat nec auctor vitae, porta sit amet urna. Praesent ex lorem, porta nec aliquet eu, ullamcorper eget nibh. Vivamus aliquet orci a elementum tincidunt. Etiam sed mi vel nibh varius viverra sed ac <est class=""></est></p>
+                                        	<h2 class="info-title">Web Designer - Google Inc</h2>
+                                            <span class="info-date">2008 - 2010 </span>
+                                            <p>Duis ipsum ligula, feugiat nec auctor vitae, porta sit amet urna. Praesent ex lorem, porta nec aliquet eu, ullamcorper eget nibh. Vivamus aliquet orci a elementum tincidunt. Etiam sed mi vel nibh varius viverra sed ac <est class=""></est></p>
                                         </div> <!-- .resume-info -->
                                         <div class="resume-info">
-                                        	<h2 class="info-title">Ph.D Student - IHEP</h2>
-                                            <span class="info-date">2009 - 2014 </span>
-                                            <p>Beam dynamics analiysis at Beam Halo Expriments at IHEP. Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam tincidunt augue in leo feugiat, quis interdum nisi sollicitudin. Suspendisse vulputate diam sit amet rutrum dictum. Donec tempus a lectus quis luctus. Vivamus sed maximus justo, sed aliquet purus. Etiam ut velit gravida, mollis turpis nec, tristique erat.</p>
+                                        	<h2 class="info-title">Senior Developer - Abc Inc</h2>
+                                            <span class="info-date">2005 - 2008 </span>
+                                            <p>Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam tincidunt augue in leo feugiat, quis interdum nisi sollicitudin. Suspendisse vulputate diam sit amet rutrum dictum. Donec tempus a lectus quis luctus. Vivamus sed maximus justo, sed aliquet purus. Etiam ut velit gravida, mollis turpis nec, tristique erat.</p>
                                         </div> <!-- .resume-info -->
                                     </div> <!-- .resume-out end -->
                                 </div> <!-- .resume-education .col-md-12 end -->
 
                                 <!--footer-->
-                                <footer class="footer"> <p>  Copyright © 2020 All right reserved </p></footer>
+                                <footer class="footer"> <p>  Copyright © 2016 All right reserved </p></footer>
 
                             </div><!-- .col-md-12 .page -->
                         </div><!--.row end-->
@@ -337,9 +319,9 @@
                                 <div class="portfolio_filter pull-right">
                                 	<ul>
                                     	<li class="select-cat" data-filter="*">All</li>
-                                        <li data-filter=".web-design">Accelerator Design</li>
-                                        <li data-filter=".aplication">RFQ Stucture design</li>
-                                        <li data-filter=".development">Projects</li>
+                                        <li data-filter=".web-design">Web Design</li>
+                                        <li data-filter=".aplication">Applications</li>
+                                        <li data-filter=".development">Development</li>
                                     </ul>
                                 </div> <!-- .portfolio-filter .pull-right end -->
                             </div>
@@ -467,7 +449,7 @@
                                     	<img src="images/post-2.jpg" alt="">
                                     </div>
                                     <div class="post-title">
-                                    	<h1>Working at HIT, how do we work?</h1>
+                                    	<h1>Working principle, how do we work?</h1>
                                     </div>
                                     <div class="post-info">
                                     	<span>December 06, 2016 / Business, Company / 2 Comments</span>
@@ -505,13 +487,8 @@
                                 </div>
 
 
-                                <!--footer <nav class="codrops-demos">
-					<a class="current-demo" href="index.html">Demo 1</a>
-					<a href="index2.html">Demo 2</a>
-					<a href="index3.html">Demo 3</a>
-					<a href="index4.html">Demo 4</a>
-				</nav> -->
-                                <footer class="footer"> <p>  Copyright © 2020 All right reserved </p></footer>
+                                <!--footer-->
+                                <footer class="footer"> <p>  Copyright © 2016 All right reserved </p></footer>
 
                             </div><!-- .col-md-12 .page -->
                         </div><!--.row end-->
@@ -539,15 +516,15 @@
                                 <div class="col-md-6 contact-info">
                                 	<h2 class="section-title">Contact Info</h2>
                                        <ul class="info-list">
-                                            <li>Address : <span>Xidazhijie92, Nangang District, Harbin,HIT</span> </li>
-                                            <li>Phone : <span>+86 15210982898</span> </li>
-                                            <li>Website : <span>www.jianghp.com.cn</span> </li>
-                                            <li>Email : <span>chianghoping@gmail.com</span> </li>
-                                            <li>Skype : <span>jianghp</span> </li>
+                                            <li>Address : <span>107727 Santa Monica Boulevard Los Angeles</span> </li>
+                                            <li>Phone : <span>+38 012-3456-7890</span> </li>
+                                            <li>Website : <span>www.chrisjohnson.com</span> </li>
+                                            <li>Email : <span>chris@domain.com</span> </li>
+                                            <li>Skype : <span>chrisjohnson85</span> </li>
                                         </ul>
                                         <div class="social-icons">
-                                            <a href="https://www.facebook.com/hoping.chiang"><i class="fa fa-facebook"></i> </a>
-                                            <a href="https://twitter.com/ChiangHoping"><i class="fa fa-twitter"></i> </a>
+                                            <a href="#"><i class="fa fa-facebook"></i> </a>
+                                            <a href="#"><i class="fa fa-twitter"></i> </a>
                                             <a href="#"><i class="fa fa-behance"></i> </a>
                                             <a href="#"><i class="fa fa-dribbble"></i> </a>
                                         </div>
@@ -556,7 +533,7 @@
       							<div id="map"></div>
 
                                 <!--footer-->
-                                <footer class="footer"> <p>  Copyright © 2020 All right reserved </p></footer>
+                                <footer class="footer"> <p>  Copyright © 2016 All right reserved </p></footer>
 
                             </div><!-- .col-md-12 .page -->
                         </div><!--.row end-->
